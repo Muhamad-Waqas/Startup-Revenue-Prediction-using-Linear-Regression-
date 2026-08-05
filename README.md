@@ -149,7 +149,7 @@ The Linear Regression model was evaluated using several regression metrics to me
 | R² Score | **-0.0976** |
 | Mean Absolute Percentage Error (MAPE) | **239.05%** |
 
-![Evaluation](images/evaluation_matrices.JPG)
+![Evaluation](images/evaluation_metrics.JPG)
 
 ---
 ## 📌 Why Did the Model Perform Poorly?

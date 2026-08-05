@@ -39,10 +39,9 @@ The dataset contains business-related information such as:
 - Industry
 - Other startup-related features
 
-> *(Add the dataset source or Kaggle link here.)*
+[> *(https://www.kaggle.com/datasets/pranshuljoshi/global-startup-funding-and-valuation-cleaned-dataset/data)*]
 
 ---
-
 # 🛠 Technologies Used
 
 - Python
@@ -67,6 +66,7 @@ The following analyses were performed:
 - Histograms
 - Boxplots
 - Correlation Heatmap
+- barplot
 
 ---
 
@@ -94,7 +94,6 @@ Some insights discovered during EDA include:
 
 - Most startups were founded between **1995 and 2015**.
 
-> *(Update these insights according to your final analysis.)*
 
 ---
 
@@ -104,7 +103,7 @@ A correlation heatmap was used to understand relationships between numerical var
 
 ### Key Observation
 
-- Most independent variables showed **weak correlation** with startup revenue.
+- Most independent variables showed **weak correlation** with startup Funding Amount.
 
 Because Linear Regression assumes a strong linear relationship between features and the target variable, weak correlations limited the model's predictive performance.
 
@@ -114,12 +113,10 @@ Because Linear Regression assumes a strong linear relationship between features 
 
 The following preprocessing steps were applied:
 
-- Data Cleaning
-- Missing Value Handling
-- Duplicate Removal
-- Feature Selection
-- Encoding (if applicable)
 - Train-Test Split
+- Scaling (StandardScaler)
+- Encoding (OneHotEncoder)
+
 
 ---
 
@@ -152,7 +149,19 @@ The Linear Regression model was evaluated using several regression metrics to me
 | R² Score | **-0.0976** |
 | Mean Absolute Percentage Error (MAPE) | **239.05%** |
 
+![Heatmap](images/heatmap.JPG)
+
 ---
+## 📌 Why Did the Model Perform Poorly?
+
+The primary reason for the poor performance is that the dataset exhibits **weak linear relationships** between the independent variables and the target variable (Revenue), as observed in the correlation heatmap.
+
+Since Linear Regression assumes a linear relationship between the input features and the target, weak correlations limit its ability to learn meaningful patterns. As a result, the model produces high prediction errors and a negative R² score.
+
+This project demonstrates an important Machine Learning principle:
+
+> **Choosing the right algorithm depends on the characteristics of the data. A poor-performing model can still provide valuable insights into the dataset and guide the selection of more suitable algorithms.**
+
 
 # 📌 Conclusion
 
@@ -168,25 +177,22 @@ Even when a model performs poorly, understanding *why* it performs poorly is an 
 
 ## Data Distribution
 
-*(Insert Histogram Screenshot)*
+*(![Histogram](images/histogram.JPG))*
 
 ---
 
 ## Boxplots
 
-*(Insert Boxplot Screenshot)*
+*(![Boxplot](images/boxplot.JPG))*
 
 ---
 
 ## Correlation Heatmap
 
-*(Insert Heatmap Screenshot)*
+![Heatmap](images/heatmap.JPG)
 
 ---
 
-## Regression Evaluation
-
-*(Insert Evaluation Metrics Screenshot)*
 
 ---
 
@@ -219,7 +225,7 @@ startup-revenue-linear-regression/
 Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/startup-revenue-linear-regression.git
+git clone https://github.com/Muhamad-Waqas/startup-revenue-linear-regression.git
 ```
 
 Move into the project directory
@@ -275,8 +281,8 @@ Through this project, I learned:
 
 Computer Science Undergraduate | Aspiring Data Scientist & Machine Learning Engineer
 
-- GitHub: https://github.com/yourusername
-- LinkedIn: https://linkedin.com/in/yourprofile
+- GitHub: https://github.com/Muhamad-Waqas
+- LinkedIn: [ https://linkedin.com/in/yourprofile](https://www.linkedin.com/in/muhammad-waqas-786800343/)
 
 ---
 

@@ -30,14 +30,14 @@ The objective is not only to build a predictive model but also to understand the
 
 The dataset contains business-related information such as:
 
-- Revenue (Target Variable)
-- Funding Amount
+- Revenue 
+- Funding Amount (Target Variable)
 - Funding Rounds
 - Market Share
 - Year Founded
 - Employee Count
 - Industry
-- Other startup-related features
+- Startup Name 
 
 [> *(https://www.kaggle.com/datasets/pranshuljoshi/global-startup-funding-and-valuation-cleaned-dataset/data)*]
 
